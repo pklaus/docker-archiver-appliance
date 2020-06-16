@@ -10,6 +10,19 @@
 * In parts inspired by this (older) docker deployment:
   <https://github.com/jsparger/docker-epics-archiver-appliance>
 
+### Guidelines
+
+The Docker image was built by the following guidelines:
+
+* Attempt to be compact in size.
+* Place the .war tomcat applications from the EPICS Archiver Appliance
+  in the /usr/local/tomcat/webapps folder
+* Put modified / custom files in `/etc/archappl/`.
+  If they are intended to replace other existing files of the
+  software, those files are removed and a link to their new
+  version in `/etc/archappl` is placed to make the customization
+  transparent.
+
 ### Environment Variables Relevant for the EPICS Archiver Appliance
 
 The [EPICS Archiver Appliance][] has a set of various
