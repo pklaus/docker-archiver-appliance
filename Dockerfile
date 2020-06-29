@@ -61,11 +61,6 @@ ENV ARCHAPPL_LONG_TERM_FOLDER=/storage/lts
 ENV EPICS_CA_AUTO_ADDR_LIST=yes
 ENV EPICS_CA_ADDR_LIST=
 
-# is this needed? don't think so...
-#ENV LD_LIBRARY_PATH=/usr/local/tomcat/webapps/engine/WEB-INF/lib/native/linux-x86_64:${LD_LIBRARY_PATH}
-# or maybe this?
-#ENV CATALINA_OPTS="${CATALINA_OPTS} -Djava.library.path=/usr/local/tomcat/webapps/engine/WEB-INF/lib/native/linux-x86_64"
-
 EXPOSE 17665
 
 CMD ["catalina.sh", "run"]
