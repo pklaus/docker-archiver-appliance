@@ -49,7 +49,7 @@ RUN rmdir /usr/local/tomcat/logs && ln -s /storage/logs /usr/local/tomcat/logs
 ENV JAVA_OPTS="-XX:+UseG1GC -Xms4G -Xmx4G -ea"
 # Tell the appliance that we are deploying all the components in one VM;
 # this reduces the thread count and other parameters in an effort to optimize memory:
-ENV ARCHAPPL_ALL_APPS_ON_ONE_JVM=true
+#ENV ARCHAPPL_ALL_APPS_ON_ONE_JVM=true
 ENV ARCHAPPL_APPLIANCES=/etc/archappl/appliances.xml
 ENV ARCHAPPL_MYIDENTITY=appliance0
 ENV ARCHAPPL_POLICIES=/etc/archappl/policies.py
